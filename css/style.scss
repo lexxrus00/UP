@@ -61,3 +61,145 @@ html {
     padding: 0 15px;
 
 }
+
+.header {
+
+    background: #CC0000;
+
+    // .header__container
+
+    &__container {
+        height: 149px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .header__logo
+
+    &__logo {}
+
+    // .header__nav
+
+    &__nav {
+        font-family: 'Oswald', 'sans-serif';
+        font-weight: 400;
+
+        display: flex;
+        gap: 40px;
+
+        height: 100%;
+
+        transition: 0.2s;
+
+        @media(max-width: 991.98px) {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background: #CC0000;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            gap: 75px;
+            padding-top: 150px;
+
+            &._active {
+                left: 0;
+            }
+
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        font-size: 24px;
+        color: #000000;
+        text-transform: uppercase;
+
+
+        display: flex;
+        align-items: center;
+
+        transition: 0.2s;
+        padding: 0 5px;
+
+
+
+        &:hover {
+            background: #1C1C1C;
+            color: #CC0000;
+        }
+
+        @media(max-width: 991.98px) {
+            font-size: 32px;
+
+            &:hover {
+                background: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    // .header__burger
+    &__burger {
+        background: none;
+        max-width: 90px;
+        height: 45px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 500;
+
+        transition: 0.3s;
+
+        span {
+            width: 100px;
+            height: 3px;
+            background: #1C1C1C;
+        }
+
+        &::before {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #1C1C1C;
+
+            transition: 0.2s;
+        }
+
+        &::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #1C1C1C;
+            transition: 0.2s;
+        }
+
+        @media(max-width: 991.98px) {
+            display: flex;
+        }
+
+        &._active {
+            display: flex;
+            justify-content: flex-start;
+
+            span {
+                display: none;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+
+            }
+        }
+    }
+
+
+}
