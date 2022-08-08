@@ -596,7 +596,12 @@ html {
 
 .get {
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+
+    @media(max-width: 500px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 
     // .get__container
 
@@ -681,5 +686,228 @@ html {
             margin-bottom: 45px;
         }
 
+    }
+}
+
+// TEAM
+.team {
+
+    // .team__container
+
+    &__container {}
+
+    // .team__title
+
+    &__title {
+        font-family: 'Oswald', 'sans-serif';
+        font-size: 70px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #CC0000;
+        text-transform: uppercase;
+
+        margin-bottom: 90px;
+
+        @media(max-width: 991.98px) {
+            text-align: center;
+        }
+
+        @media(max-width:500px) {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    // .team__block
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+        &:not(:last-child) {
+            margin-bottom: 120px;
+        }
+
+        @media(max-width: 991.98px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+
+    }
+
+    .team__block_reverse {
+        flex-direction: row-reverse;
+
+        @media(max-width: 991.98px) {
+            flex-direction: column;
+        }
+    }
+
+    // .team__info
+
+    &__info {
+        max-width: 550px;
+
+        @media(max-width: 991.98px) {
+            text-align: center;
+        }
+    }
+
+    // .team__name
+
+    &__name {
+        font-family: 'Oswald', 'sans-serif';
+        font-size: 50px;
+        font-weight: 300;
+        color: #CC0000;
+        text-transform: uppercase;
+
+        margin-bottom: 34px;
+
+        @media(max-width:500px) {
+            font-size: 30px;
+        }
+    }
+
+    // .team__text
+
+    &__text {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 150%;
+        color: #E1E1E1;
+
+        @media(max-width:500px) {
+            font-size: 18px;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // .team__image
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+// QUESTIONS
+
+.questions {
+    padding-top: 150px;
+
+    // .questions__container
+
+    &__container {}
+
+    // .questions__title
+
+    &__title {
+        font-family: 'Oswald', 'sans-serif';
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #808080;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-bottom: 70px;
+
+
+    }
+
+    // .questions__block
+
+    &__block {
+        max-width: 1000px;
+        margin: 0 auto 50px auto;
+    }
+
+    // .questions__question
+
+    &__question {
+        width: 100%;
+        background: #373737;
+
+        padding: 15px 70px;
+        position: relative;
+        cursor: pointer;
+
+        &._active {
+            &::before {
+                content: '';
+                width: 44px;
+                height: 2px;
+                background: url(../img/hide.svg);
+                position: absolute;
+                top: 50px;
+                left: 7px;
+
+                cursor: pointer;
+            }
+        }
+
+
+        &::before {
+            content: '';
+            width: 44px;
+            height: 44px;
+            background: url(../img/show.svg);
+            position: absolute;
+            top: 15px;
+            left: 7px;
+
+            cursor: pointer;
+        }
+
+
+
+        p {
+            font-family: 'Roboto', 'sans-serif';
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 150%;
+            color: #FFFFFF;
+
+
+        }
+    }
+
+    // .questions__answer
+
+    &__answer {
+        width: 100%;
+        background: #1C1C1C;
+
+        padding: 15px 70px;
+        cursor: pointer;
+
+        display: none;
+
+        &._active {
+            display: block;
+        }
+
+        p {
+            font-family: 'Roboto', 'sans-serif';
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 150%;
+            color: #FFFFFF;
+
+
+        }
     }
 }
