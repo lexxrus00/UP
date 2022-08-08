@@ -17,10 +17,10 @@ headerLinks.forEach(function (headerLink) {
 });
 
 
-const questionsItems = document.querySelectorAll('.questions__question');
+const questionsItems = document.querySelector('.questions__question');
 const answerItem = document.querySelector('.questions__answer');
-questionsItems.forEach(function (questionItem) {
-    questionItem.addEventListener("click", function (e) {
-        answerItem.classList.toggle('_active');
-    })
+
+questionsItems.addEventListener("click", function (e) {
+    answerItem.classList.toggle('_active');
+    questionsItems.classList.toggle('_active');
 })

@@ -825,6 +825,14 @@ html {
 
         margin-bottom: 70px;
 
+        @media(max-width: 991.98px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 767.98px) {
+            font-size: 30px;
+        }
+
 
     }
 
@@ -833,6 +841,8 @@ html {
     &__block {
         max-width: 1000px;
         margin: 0 auto 50px auto;
+
+
     }
 
     // .questions__question
@@ -844,6 +854,14 @@ html {
         padding: 15px 70px;
         position: relative;
         cursor: pointer;
+        user-select: none;
+
+        @media(max-width: 767.98px) {
+            padding: 15px 30px 30px 70px;
+        }
+
+        @media(max-width: 500px) {}
+
 
         &._active {
             &::before {
@@ -880,6 +898,13 @@ html {
             font-weight: 300;
             line-height: 150%;
             color: #FFFFFF;
+
+            @media(max-width: 991.98px) {
+                font-size: 18px;
+            }
+
+
+
 
 
         }
