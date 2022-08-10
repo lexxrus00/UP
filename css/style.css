@@ -125,7 +125,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 75px;
+    gap: 45px;
     padding-top: 150px;
   }
   .header__nav._active {
@@ -354,7 +354,7 @@ html {
 
 .rules__header {
   width: 100%;
-  background: #CC0000;
+  background: #1C1C1C;
   padding-left: 15px;
   padding-bottom: 100px;
 }
@@ -378,7 +378,7 @@ html {
   font-size: 70px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #1C1C1C;
+  color: #CC0000;
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
@@ -387,7 +387,7 @@ html {
   content: '';
   max-width: 500px;
   height: 2px;
-  background: #1C1C1C;
+  background: #CC0000;
   display: block;
 }
 
@@ -448,7 +448,7 @@ html {
   font-weight: 400;
   font-size: 30px;
   line-height: 150%;
-  color: #1C1C1C;
+  color: #E1E1E1;
 }
 
 @media (max-width: 991.98px) {
@@ -476,7 +476,7 @@ html {
 .footer-rules {
   background-image: url(../img/Logo-gradient.svg);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right 15px;
 }
 
 @media (max-width: 991.98px) {
