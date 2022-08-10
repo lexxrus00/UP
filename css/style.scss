@@ -64,7 +64,7 @@ html {
 
 .header {
 
-    background: #CC0000;
+    background: #b30000;
 
     // .header__container
 
@@ -117,7 +117,7 @@ html {
             position: absolute;
             top: 0;
             left: -100%;
-            background: #CC0000;
+            background: #b30000;
             width: 100%;
             height: 100vh;
             flex-direction: column;
@@ -288,8 +288,8 @@ html {
 
     &__quote {
         font-family: 'Oswald', 'sans-serif';
-        font-weight: 400;
-        color: #CC0000;
+        font-weight: 300;
+        color: #E1E1E1;
         font-size: 24px;
         letter-spacing: 2px;
         display: block;
@@ -813,6 +813,7 @@ html {
 
 .questions {
     padding-top: 150px;
+    padding-bottom: 100px;
 
     // .questions__container
 
@@ -846,7 +847,7 @@ html {
 
     &__block {
         max-width: 1000px;
-        margin: 0 auto 50px auto;
+        margin: 0 auto;
 
 
     }
@@ -941,4 +942,60 @@ html {
 
         }
     }
+}
+
+// FOOTER
+
+.footer {
+
+    padding: 30px 0 15px 0;
+
+    background: #292929;
+
+    // .footer__
+
+    &__ {
+
+        // .footer___container
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+
+        }
+    }
+
+    // .footer__title
+
+    &__title {
+        font-family: 'Oswald', 'sans-serif';
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @media(max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+        gap: 15px;
+
+        @media(max-width: 500px) {
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    // .footer__link
+
+    &__link {}
 }
