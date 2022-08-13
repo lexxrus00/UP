@@ -64,7 +64,8 @@ html {
 
 .header {
 
-    background: #b30000;
+    // background: #b30000;
+    background: #202020;
 
     // .header__container
 
@@ -117,7 +118,8 @@ html {
             position: absolute;
             top: 0;
             left: -100%;
-            background: #b30000;
+            // background: #b30000; - 1 вариант цвета
+            background: #373737;
             width: 100%;
             height: 100vh;
             flex-direction: column;
@@ -136,7 +138,7 @@ html {
 
     &__link {
         font-size: 24px;
-        color: #000000;
+        color: #E1E1E1;
         text-transform: uppercase;
 
 
@@ -149,8 +151,8 @@ html {
 
 
         &:hover {
-            background: #1C1C1C;
-            color: #CC0000;
+            background: #373737;
+            color: #FFFFFF;
         }
 
         @media(max-width: 991.98px) {
@@ -181,14 +183,14 @@ html {
         span {
             width: 100px;
             height: 3px;
-            background: #1C1C1C;
+            background: #CC0000;
         }
 
         &::before {
             content: '';
             width: 100px;
             height: 3px;
-            background: #1C1C1C;
+            background: #CC0000;
 
             transition: 0.2s;
         }
@@ -197,7 +199,7 @@ html {
             content: '';
             width: 100px;
             height: 3px;
-            background: #1C1C1C;
+            background: #CC0000;
             transition: 0.2s;
         }
 
@@ -212,14 +214,17 @@ html {
 
             span {
                 display: none;
+
             }
 
             &::before {
                 transform: rotate(45deg);
+                background: #808080;
             }
 
             &::after {
                 transform: rotate(-45deg);
+                background: #808080;
 
             }
         }
@@ -867,7 +872,10 @@ html {
             padding: 15px 30px 30px 70px;
         }
 
-        @media(max-width: 500px) {}
+
+
+
+
 
 
         &._active {
@@ -895,6 +903,10 @@ html {
             left: 7px;
 
             cursor: pointer;
+
+
+
+
         }
 
 
@@ -939,7 +951,9 @@ html {
             line-height: 150%;
             color: #FFFFFF;
 
-
+            @media(max-width: 991.98px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -989,10 +1003,10 @@ html {
         display: flex;
         gap: 15px;
 
-        @media(max-width: 500px) {
-            flex-direction: column;
-            gap: 25px;
-        }
+        // @media(max-width: 500px) {
+        //     flex-direction: column;
+        //     gap: 25px;
+        // }
     }
 
     // .footer__link
